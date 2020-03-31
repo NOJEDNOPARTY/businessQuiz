@@ -1,0 +1,65 @@
+
+/* Montserrat */
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+         url('./fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('./fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('./fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Gilroy */
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('./fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Black';
+    src: url('./fonts/gilroy/Gilroy-Black.woff2') format('woff2'),
+        url('./fonts/gilroy/Gilroy-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Gloria Hallelujah */
+
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    src: url('./fonts/gloriahallelujah/GloriaHallelujah.woff2') format('woff2'),
+        url('./fonts/gloriahallelujah/GloriaHallelujah.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* librebaskerville */
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('./fonts/librebaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+        url('./fonts/librebaskerville/LibreBaskerville-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville-Italic';
+    src: url('./fonts/librebaskerville/LibreBaskerville-Italic.woff2') format('woff2'),
+         url('./fonts/librebaskerville/LibreBaskerville-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
