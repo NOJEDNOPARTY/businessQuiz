@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="quiz-block toggle-block active">
+    <div class="quiz-block">
         <div class="wrapper">
             <div class="quiz-prize-list">
                 <div class="quiz-prize">
@@ -100,23 +100,364 @@
                         Шаг <span>3</span> из 9
                     </div>
                 </div>
-                <div class="quiz-title">Ваш пол?</div>
-                <div class="form-radio">
-                    <label>
-                        <input checked type="radio" name="gender">
-                        <span class="form-radio-btn"></span>
-                        <span class="form-radio-name">Мужчина</span>
-                    </label>
-                    <label>
-                        <input type="radio" name="gender">
-                        <span class="form-radio-btn"></span>
-                        <span class="form-radio-name">Женщина </span>
-                    </label>
+                <div class="quiz-1 toggle-block active">
+                    <div class="quiz-title">Ваш пол?</div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="gender">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Мужчина</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Женщина </span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-2" data-progress="22%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
                 </div>
-                <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-block">
-                    <img src="./images/wolf-icon.png" alt="wolf">
-                    <span>Уу-у... Следующий шаг</span>
-                </a>
+                <div class="quiz-2 toggle-block">
+                    <div class="quiz-title">Какой Ваш возраст? </div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="age">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">До 18</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="age">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">От 18 до 25</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="age">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">От 25 до 35</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="age">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">От 35</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-3" data-progress="33%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-3 toggle-block">
+                    <div class="quiz-title">К кому Вы относитесь? </div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Предприниматель</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Топ-менеджер </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Наёмный сотрудник </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Фрилансер </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Студент</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="typeofwork">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Безработный</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-4" data-progress="44%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-4 toggle-block">
+                    <div class="quiz-title">К какой сфере деятельности относитесь / какие компетенции имеете? </div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Производство</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Строительство/недвижимость  </span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Маркетинг/веб-разработка/smm  </span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Торговля offline</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">E-commerce</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">IT</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Образование</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Логистика/транспорт</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Ресторанный бизнес</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Аграрный бизнес</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Финансы/инвестиции/блокчейн/крипта</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Сетевой бизнес</span>
+                        </label>
+                        <label>
+                            <input  type="radio" name="activity">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Другое (указать ниже) </span>
+                        </label>
+                        <input type="text" class="form-field" placeholder="Введите ответ">
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-5" data-progress="55%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-5 toggle-block">
+                    <div class="quiz-title">Как часто обучаетесь?</div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="timeoflearn">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Ежедневно</span>
+                        </label>
+                        <label>
+                            <input checked type="radio" name="timeoflearn">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Раз в неделю</span>
+                        </label>
+                        <label>
+                            <input checked type="radio" name="timeoflearn">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Раз в месяц</span>
+                        </label>
+                        <label>
+                            <input checked type="radio" name="timeoflearn">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Раз в год</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-6" data-progress="66%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-6 toggle-block">
+                    <div class="quiz-title">Какой способ обучения предпочитаете? </div>
+                    <div class="quiz-subtitle">*можно выбрать несколько вариантов ответа</div>
+                    <div class="form-radio">
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Книги">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Книги</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Видео">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Видео</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Вебинары">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Вебинары</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Тренинги">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Тренинги</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Offline конференции">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Offline конференции</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="wayoflearn" value="Обучение на личном опыте">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Обучение на личном опыте</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-7" data-progress="77%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-7 toggle-block">
+                    <div class="quiz-title">Какие темы для обучения для Вас сейчас самые актуальные?</div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Как управлять компанией в кризис</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Самомативация в кризис</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Как поднять продажи в кризис</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Какие инструменты в маркетинге работают во время кризиса</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Как управлять командой удалённо</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Найм и обучение сотрудников в кризис</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="topics">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Как упаковать компанию, чтобы поднимать цены в кризис</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-8 toggle-block">
+                    <div class="quiz-title">Есть ли у Вас запрос на нетворкинг? </div>
+                    <div class="form-radio">
+                        <label>
+                            <input checked type="radio" name="networking">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Да </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="networking">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Нет</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+                <div class="quiz-9 toggle-block">
+                    <div class="quiz-title">Сколько денег Вы инвестируете в своё обучение? </div>
+                    <div class="form-radio">
+                        <label>
+                            <input type="radio" name="money">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Всё обучение только бесплатно</span>
+                        </label>
+                        <label>
+                            <input checked type="radio" name="money">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">До 100$ в год  </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="money">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">От 100$ до 1000$ в  год  </span>
+                        </label>
+                        <label>
+                            <input type="radio" name="money">
+                            <span class="form-radio-btn"></span>
+                            <span class="form-radio-name">Больше 1000$ в год</span>
+                        </label>
+                    </div>
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                        <img src="./images/wolf-icon.png" alt="wolf">
+                        <span>Уу-у... Следующий шаг</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="lastStep" class="popup-wrapper">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-title">Спасибо, что уделили время! <br> Оставьте ваш номер телефона и все <br>подарки будут высланы вам<br> СМС-сообщением.</div>
+                    <div class="popup-subtitle">Вы получитите:</div>
+                    <ul class="popup-list">
+                        <li>Видеозаписи всех форумов Бизнес-Пробуждение</li>
+                        <li>Чек-лист 46 инструментов предпринимателя для борьбы с кризисом</li>
+                        <li>Купон на скидку 10% на самый масштабный форум страны Бизнес-Пробуждение 5.0</li>
+                    </ul>
+                    <input type="text" class="form-field" placeholder="Имя*">
+                    <input type="tel" class="form-field" placeholder="Ваш телефон*">
+                    <input class="btn btn-orange" type="submit" value="Получить Антикризисный набор">
+                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
+                </div>
+            </div>
+        </div>
+        <div id="thanksPopup" class="popup-wrapper active">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-title">Такие предприниматели как мы с Вами <br>
+                        не умирают в кризис, они становятся<br>
+                        сильнее, потому что знают что делать<br>
+                        и делают это!</div>
+                    <div class="popup-timing">
+                        <div class="popup-timing-icon"><img src="./images/times-icon.png" alt="times-icon"></div>
+                        <p>Ожидайте ваш антикризисный набор в течение дня.</p>
+                    </div>
+                    <div class="popup-title popup-sub">И подпишитесь на наш телеграм-канал чтобы получать еще больше подарков!</div>
+                    <a href="#" class="btn btn-orange btn-telegram" ><img src="./images/telegram.png" alt="telegram">Подписаться</a>
+                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
+                </div>
             </div>
         </div>
     </div>
