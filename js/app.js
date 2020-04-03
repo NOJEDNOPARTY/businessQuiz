@@ -4,7 +4,48 @@ var common = {
 		common.stringAnimate();
 	},
 	main: function(){
+		$('.start-btn').click(function(e){
+			e.preventDefault();
+			var dataBlock = '.' + $(this).attr('data-block')
+			var dataClose = '.' + $(this).attr('data-close')
+			$(dataBlock).addClass('active');
+			$(dataClose).addClass('hidden');
+		});
+		
+		$('.btn-popup').click(function(e){
+			e.preventDefault();
+			var dataBlock = '#' + $(this).attr('data-block')
+			$('.popup-wrapper').removeClass('active');
+			$(dataBlock).addClass('active');
+		});
 
+		$('.popup-close').click(function(e){
+			e.preventDefault();
+			$('.popup-wrapper').removeClass('active');
+		});
+
+		$('.form-radio label').click(function(e){
+			if($(this).hasClass('another-trigger')) {
+				if($(this).find('input').prop("checked") == true) {
+					$('.another-field').addClass('active');
+				}
+			}else {
+				$('.another-field').removeClass('active');
+			}
+		});
+		
+		$('.trigger-btn').click(function(e){
+			e.preventDefault();
+			var dataBlock = '.' + $(this).attr('data-block');
+			var dataprize = '.' + $(this).attr('data-prize');
+			var dataProgress = $(this).attr('data-progress');
+			var dataProgressText = $(this).attr('data-progress-text');
+			$('.toggle-block').removeClass('active');
+			$('.quiz-progress-line').css('max-width', dataProgress);
+			$('.quiz-progress-text span').text(dataProgressText)
+			$(dataBlock).addClass('active');
+			$(dataprize).addClass('active');
+		});
 	},
 	stringAnimate: function() {
 		$.fn.endlessScroll = function (options) {

@@ -31,7 +31,7 @@
     <meta name="msapplication-square310x310logo" content="./images/favicons/largetile.png" />
 </head>
 <body>
-    <div class="main-block toggle-block">
+    <div class="main-block">
         <div class="wrapper">
             <div class="string">
                 <div id="marquee">Реальность быстро меняется. Коронавирус. Экономический кризис. Время быть быстрым. Мы поможем тебе.</div>
@@ -48,7 +48,7 @@
                     <div class="main-items-img-mob">
                         <img src="./images/bonus-img.png" alt="bonus-img">
                     </div>
-                    <a href="#" class="btn btn-orange trigger-btn" data-block="quiz-block">Пройти опрос</a>
+                    <a href="#" class="btn btn-orange start-btn" data-block="quiz-block" data-close="main-block">Пройти опрос</a>
                     <p class="time-info">Время прохождения теста 3 минуты</p>
                 </div>
                 <div class="main-items-img">
@@ -57,10 +57,44 @@
             </div>
         </div>
     </div>
-    <div class="quiz-block">
+    <form action="#" class="quiz-block">
+        <div id="lastStep" class="popup-wrapper">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-title">Спасибо, что уделили время! <br> Оставьте ваш номер телефона и все <br>подарки будут высланы вам<br> СМС-сообщением.</div>
+                    <div class="popup-subtitle">Вы получитите:</div>
+                    <ul class="popup-list">
+                        <li>Видеозаписи всех форумов Бизнес-Пробуждение</li>
+                        <li>Чек-лист 46 инструментов предпринимателя для борьбы с кризисом</li>
+                        <li>Купон на скидку 10% на самый масштабный форум страны Бизнес-Пробуждение 5.0</li>
+                    </ul>
+                    <input type="text" class="form-field" placeholder="Имя*">
+                    <input type="tel" class="form-field" placeholder="Ваш телефон*">
+                    <input class="btn btn-orange btn-popup" data-block="thanksPopup" type="submit" value="Получить Антикризисный набор">
+                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
+                </div>
+            </div>
+        </div>
+        <div id="thanksPopup" class="popup-wrapper">
+            <div class="popup-layout">
+                <div class="popup">
+                    <div class="popup-title">Такие предприниматели как мы с Вами <br>
+                        не умирают в кризис, они становятся<br>
+                        сильнее, потому что знают что делать<br>
+                        и делают это!</div>
+                    <div class="popup-timing">
+                        <div class="popup-timing-icon"><img src="./images/times-icon.png" alt="times-icon"></div>
+                        <p>Ожидайте ваш антикризисный набор в течение дня.</p>
+                    </div>
+                    <div class="popup-title popup-sub">И подпишитесь на наш телеграм-канал чтобы получать еще больше подарков!</div>
+                    <a href="#" class="btn btn-orange btn-telegram" ><img src="./images/telegram.png" alt="telegram">Подписаться</a>
+                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
+                </div>
+            </div>
+        </div>
         <div class="wrapper">
             <div class="quiz-prize-list">
-                <div class="quiz-prize">
+                <div class="quiz-prize quiz-prize-1">
                     <img src="./images/prize-item-1.png" alt="prize-item">
                     <p>Видеозаписи всех форумов Бизнес-Пробуждение</p>
                     <div class="quiz-prize-trigger">
@@ -68,7 +102,7 @@
                         <img class="quiz-open" src="./images/open.png" alt="open">
                     </div>
                 </div>
-                <div class="quiz-prize">
+                <div class="quiz-prize quiz-prize-2">
                     <img src="./images/prize-item-2.png" alt="prize-item">
                     <p>Чек-лист 46 инструментов предпринимателя для борьбы с кризисом</p>
                     <div class="quiz-prize-trigger">
@@ -76,7 +110,7 @@
                         <img class="quiz-open" src="./images/open.png" alt="open">
                     </div>
                 </div>
-                <div class="quiz-prize">
+                <div class="quiz-prize quiz-prize-3">
                     <img src="./images/prize-item-3.png" alt="prize-item">
                     <p>Онлайн мастер-класс Кирилла Куницкого на тему: "Как не потерять свой бизнес в кризис"
                     </p>
@@ -85,7 +119,7 @@
                         <img class="quiz-open" src="./images/open.png" alt="open">
                     </div>
                 </div>
-                <div class="quiz-prize">
+                <div class="quiz-prize quiz-prize-4">
                     <img src="./images/prize-item-4.png" alt="prize-item">
                     <p>Онлайн мастер-класс Михаила Гребенюка на тему: "Как делать больше продаж в кризис"</p>
                     <div class="quiz-prize-trigger">
@@ -96,8 +130,9 @@
             </div>
             <div class="quiz-cnt">
                 <div class="quiz-progress">
+                    <div class="quiz-progress-line"></div>
                     <div class="quiz-progress-text">
-                        Шаг <span>3</span> из 9
+                        Шаг <span>1</span> из 9
                     </div>
                 </div>
                 <div class="quiz-1 toggle-block active">
@@ -114,7 +149,7 @@
                             <span class="form-radio-name">Женщина </span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-2" data-progress="22%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-2" data-progress="22%" data-progress-text="2" data-prize="quiz-prize-1">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -143,7 +178,7 @@
                             <span class="form-radio-name">От 35</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-3" data-progress="33%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-3" data-progress="33%" data-progress-text="3">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -182,7 +217,7 @@
                             <span class="form-radio-name">Безработный</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-4" data-progress="44%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-4" data-progress="44%" data-progress-text="4" data-prize="quiz-prize-2">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -250,14 +285,14 @@
                             <span class="form-radio-btn"></span>
                             <span class="form-radio-name">Сетевой бизнес</span>
                         </label>
-                        <label>
+                        <label class="another-trigger">
                             <input  type="radio" name="activity">
                             <span class="form-radio-btn"></span>
                             <span class="form-radio-name">Другое (указать ниже) </span>
                         </label>
-                        <input type="text" class="form-field" placeholder="Введите ответ">
+                        <input type="text" class="form-field another-field" placeholder="Введите ответ">
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-5" data-progress="55%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-5" data-progress="55%" data-progress-text="5">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -286,7 +321,7 @@
                             <span class="form-radio-name">Раз в год</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-6" data-progress="66%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-6" data-progress="66%" data-progress-text="6">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -326,7 +361,7 @@
                             <span class="form-radio-name">Обучение на личном опыте</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-7" data-progress="77%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-7" data-progress="77%" data-progress-text="7" data-prize="quiz-prize-3">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -370,7 +405,7 @@
                             <span class="form-radio-name">Как упаковать компанию, чтобы поднимать цены в кризис</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%" data-progress-text="8">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -389,7 +424,7 @@
                             <span class="form-radio-name">Нет</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-9" data-progress="100%" data-progress-text="9" data-prize="quiz-prize-4">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
@@ -418,49 +453,14 @@
                             <span class="form-radio-name">Больше 1000$ в год</span>
                         </label>
                     </div>
-                    <a href="" class="btn btn-wolf trigger-btn" data-block="quiz-8" data-progress="88%">
+                    <a href="" class="btn btn-wolf btn-popup" data-block="lastStep">
                         <img src="./images/wolf-icon.png" alt="wolf">
                         <span>Уу-у... Следующий шаг</span>
                     </a>
                 </div>
             </div>
         </div>
-        
-        <div id="lastStep" class="popup-wrapper">
-            <div class="popup-layout">
-                <div class="popup">
-                    <div class="popup-title">Спасибо, что уделили время! <br> Оставьте ваш номер телефона и все <br>подарки будут высланы вам<br> СМС-сообщением.</div>
-                    <div class="popup-subtitle">Вы получитите:</div>
-                    <ul class="popup-list">
-                        <li>Видеозаписи всех форумов Бизнес-Пробуждение</li>
-                        <li>Чек-лист 46 инструментов предпринимателя для борьбы с кризисом</li>
-                        <li>Купон на скидку 10% на самый масштабный форум страны Бизнес-Пробуждение 5.0</li>
-                    </ul>
-                    <input type="text" class="form-field" placeholder="Имя*">
-                    <input type="tel" class="form-field" placeholder="Ваш телефон*">
-                    <input class="btn btn-orange" type="submit" value="Получить Антикризисный набор">
-                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
-                </div>
-            </div>
-        </div>
-        <div id="thanksPopup" class="popup-wrapper active">
-            <div class="popup-layout">
-                <div class="popup">
-                    <div class="popup-title">Такие предприниматели как мы с Вами <br>
-                        не умирают в кризис, они становятся<br>
-                        сильнее, потому что знают что делать<br>
-                        и делают это!</div>
-                    <div class="popup-timing">
-                        <div class="popup-timing-icon"><img src="./images/times-icon.png" alt="times-icon"></div>
-                        <p>Ожидайте ваш антикризисный набор в течение дня.</p>
-                    </div>
-                    <div class="popup-title popup-sub">И подпишитесь на наш телеграм-канал чтобы получать еще больше подарков!</div>
-                    <a href="#" class="btn btn-orange btn-telegram" ><img src="./images/telegram.png" alt="telegram">Подписаться</a>
-                    <a href="#" class="popup-close"><img src="./images/close-popup.png" alt="close-popup"></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </form>
 
     <script src="js/libs/jquery-3.3.1.min.js"></script>
     <script src="./js/app.js"></script>

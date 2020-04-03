@@ -13,6 +13,8 @@ body {background-color: #010101;}
     background-position: center;
 }
 
+.main-block.hidden {display: none;}
+
 .wrapper {
     width: 100%;
     max-width: 1440px;
@@ -177,6 +179,7 @@ body {background-color: #010101;}
 
 
 .quiz-block {
+    display: none;
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
@@ -185,6 +188,8 @@ body {background-color: #010101;}
     background-size: cover;
     background-position: center;
 }
+
+.quiz-block.active {display: block;}
 
 .quiz-block .wrapper {
     display: flex;
@@ -294,7 +299,7 @@ body {background-color: #010101;}
     overflow: hidden;
 }
 
-.quiz-progress::before {
+.quiz-progress-line {
     content: '';
     position: absolute;
     top: 0;
@@ -392,6 +397,8 @@ body {background-color: #010101;}
     border: 2px solid #ffffff;
     transition: 0.3s ease;
 }
+.another-field {display: none;}
+.another-field.active {display: block;}
 .form-field:focus {border: 2px solid #fbbb01;}
 
 
